@@ -56,15 +56,15 @@ __asm
     
     /* Region Lengths assigment */
     ".equ __cm0p_flash_start,   0x10000000 \n"
-    ".equ __cm0p_flash_length,  0x00010000 \n"
+    ".equ __cm0p_flash_length,  0x00008000 \n"
     ".equ __cm0p_sram_start,    0x08000000 \n"
-    ".equ __cm0p_sram_length,   0x00008000 \n"
-    ".equ __cm4_flash_start,    0x10010000 \n"
-    ".equ __cm4_flash_length,   0x00070000 \n"
-    ".equ __cm4_sram_start,     0x08010000 \n"
-    ".equ __cm4_sram_length,    0x0002F800 \n"
-    ".equ __shared_sram_start,  0x08008000 \n"
-    ".equ __shared_sram_length, 0x00008000 \n"
+    ".equ __cm0p_sram_length,   0x00004000 \n"
+    ".equ __cm4_flash_start,    0x10000000 \n"
+    ".equ __cm4_flash_length,   0x00040000 \n"
+    ".equ __cm4_sram_start,     0x08008000 \n"
+    ".equ __cm4_sram_length,    0x00017800 \n"
+    ".equ __shared_sram_start,  0x08004000 \n"
+    ".equ __shared_sram_length, 0x00004000 \n"
 );
 
 

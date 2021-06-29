@@ -33,10 +33,6 @@
 * Functions
 *******************************************************************************/
 /* Externs from Linker script */
-#if defined(__ARMCC_VERSION) /* ARM-MDK */
-extern int Image$$SHARED_RAM$$Base;
-#define __shared_sram_start     Image$$SHARED_RAM$$Base
-#else /* (__GNUC__) GCC or (__ICCARM__) IAR */
 extern int __cm0p_flash_start;
 extern int __cm0p_flash_length;
 extern int __cm0p_sram_start;
@@ -47,7 +43,6 @@ extern int __cm4_sram_start;
 extern int __cm4_sram_length;
 extern int __shared_sram_start;
 extern int __shared_sram_length;
-#endif
 
 /** ------------------------ FLASH Setup ---------------------------- **/
 /** Slave SMPU config for CM0+ Application Flash region */
